@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 interface LogoWallProps {
@@ -15,21 +14,8 @@ interface LogoWallProps {
 export function LogoWall({ logos, className = '' }: LogoWallProps) {
   return (
     <div className={`py-16 ${className}`}>
-      <div className="overflow-hidden">
-        <motion.div
-          className="flex space-x-16"
-          animate={{
-            x: [0, -100 * logos.length],
-          }}
-          transition={{
-            x: {
-              repeat: Infinity,
-              repeatType: 'loop',
-              duration: 20,
-              ease: 'linear',
-            },
-          }}
-        >
+      <div className="overflow-hidden relative">
+        <div className="flex space-x-16 animate-scroll">
           {[...logos, ...logos].map((logo, index) => (
             <div
               key={index}
@@ -44,7 +30,7 @@ export function LogoWall({ logos, className = '' }: LogoWallProps) {
               />
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </div>
   )
