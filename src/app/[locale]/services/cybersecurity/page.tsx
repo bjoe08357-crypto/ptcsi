@@ -91,7 +91,7 @@ export default function CybersecurityPage() {
     <>
       <PageHeader
         title="Cybersecurity"
-        description="Comprehensive security solutions to protect your digital assets and business operations"
+        subtitle="Comprehensive security solutions to protect your digital assets and business operations"
       />
 
       <Section className="py-20 bg-white">

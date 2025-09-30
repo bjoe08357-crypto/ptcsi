@@ -91,7 +91,7 @@ export default function DataAnalyticsPage() {
     <>
       <PageHeader
         title="Data Analytics"
-        description="Transform your data into actionable insights with advanced analytics and machine learning solutions"
+        subtitle="Transform your data into actionable insights with advanced analytics and machine learning solutions"
       />
 
       <Section className="py-20 bg-white">

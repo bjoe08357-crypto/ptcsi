@@ -91,7 +91,7 @@ export default function DeFiSolutionsPage() {
     <>
       <PageHeader
         title="DeFi Solutions"
-        description="Decentralized finance protocols and liquidity management systems"
+        subtitle="Decentralized finance protocols and liquidity management systems"
       />
 
       <Section className="py-20 bg-white">

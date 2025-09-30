@@ -91,7 +91,7 @@ export default function QATestingPage() {
     <>
       <PageHeader
         title="QA Testing"
-        description="Comprehensive quality assurance and testing services ensuring reliable, high-performance software"
+        subtitle="Comprehensive quality assurance and testing services ensuring reliable, high-performance software"
       />
 
       <Section className="py-20 bg-white">

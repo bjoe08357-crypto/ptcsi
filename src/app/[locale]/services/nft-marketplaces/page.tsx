@@ -91,7 +91,7 @@ export default function NFTMarketplacesPage() {
     <>
       <PageHeader
         title="NFT & Marketplaces"
-        description="NFT creation, marketplace development, and tokenization services"
+        subtitle="NFT creation, marketplace development, and tokenization services"
       />
 
       <Section className="py-20 bg-white">

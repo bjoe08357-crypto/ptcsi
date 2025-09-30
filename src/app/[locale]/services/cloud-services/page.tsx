@@ -91,7 +91,7 @@ export default function CloudServicesPage() {
     <>
       <PageHeader
         title="Cloud Services"
-        description="Accelerate your digital transformation with scalable cloud solutions and expert migration services"
+        subtitle="Accelerate your digital transformation with scalable cloud solutions and expert migration services"
       />
 
       <Section className="py-20 bg-white">

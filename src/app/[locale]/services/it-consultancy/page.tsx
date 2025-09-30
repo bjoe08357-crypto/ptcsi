@@ -91,7 +91,7 @@ export default function ITConsultancyPage() {
     <>
       <PageHeader
         title="IT Consultancy"
-        description="Strategic IT consulting to optimize your technology stack and drive digital transformation"
+        subtitle="Strategic IT consulting to optimize your technology stack and drive digital transformation"
       />
 
       <Section className="py-20 bg-white">

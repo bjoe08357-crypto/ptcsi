@@ -91,7 +91,7 @@ export default function SmartContractDevelopmentPage() {
     <>
       <PageHeader
         title="Smart Contract Development"
-        description="Secure and audited smart contracts for blockchain applications"
+        subtitle="Secure and audited smart contracts for blockchain applications"
       />
 
       <Section className="py-20 bg-white">

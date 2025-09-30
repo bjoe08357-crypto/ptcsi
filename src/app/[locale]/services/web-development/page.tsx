@@ -75,7 +75,7 @@ export default function WebDevelopmentPage() {
     <>
       <PageHeader
         title="Web Development"
-        description="Custom web applications built with modern technologies and best practices"
+        subtitle="Custom web applications built with modern technologies and best practices"
       />
 
       <Section className="py-20 bg-white">
