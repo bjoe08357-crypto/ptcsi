@@ -76,7 +76,7 @@ export default function ServicesPage() {
     <>
       <PageHeader
         title="Our Services"
-        description="Comprehensive IT and Web3 solutions to transform your business"
+        subtitle="Comprehensive IT and Web3 solutions to transform your business"
       />
 
       <Section className="py-20 bg-gray-50">
