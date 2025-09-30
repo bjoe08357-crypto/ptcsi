@@ -121,7 +121,7 @@ export default function ServicesPage() {
               Ready to Get Started?
             </h2>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Let's discuss your project requirements and create a customized solution for your business.
+              Let&apos;s discuss your project requirements and create a customized solution for your business.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg">
