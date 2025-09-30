@@ -69,6 +69,17 @@
     @apply text-gray-300;
   }
   
+  /* Ensure buttons maintain proper text colors */
+  .dark button {
+    color: inherit;
+  }
+  
+  .dark .bg-gradient-to-r,
+  .dark .bg-blue-600,
+  .dark .bg-purple-600 {
+    color: white !important;
+  }
+  
   /* Dark mode section backgrounds */
   .dark section {
     @apply bg-gray-950;
