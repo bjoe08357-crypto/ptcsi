@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider
-          defaultTheme="system"
+          defaultTheme="light"
           storageKey="ptcsi-theme"
         >
           {children}

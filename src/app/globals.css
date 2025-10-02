@@ -51,6 +51,10 @@
   * {
     @apply border-border;
   }
+  html {
+    @apply bg-white;
+    color-scheme: light;
+  }
   body {
     @apply bg-background text-foreground transition-colors duration-200;
   }

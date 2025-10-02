@@ -14,11 +14,18 @@ export function Footer() {
   }
 
   const footerLinks = {
-    services: [
-      { name: 'Web Development', href: '/en/services/web-development' },
+    web3: [
       { name: 'Smart Contract Development', href: '/en/services/smart-contract-development' },
       { name: 'DeFi Solutions', href: '/en/services/defi-solutions' },
       { name: 'NFT & Marketplaces', href: '/en/services/nft-marketplaces' },
+    ],
+    services: [
+      { name: 'Web Development', href: '/en/services/web-development' },
+      { name: 'Cybersecurity', href: '/en/services/cybersecurity' },
+      { name: 'Cloud Services', href: '/en/services/cloud-services' },
+      { name: 'IT Consultancy', href: '/en/services/it-consultancy' },
+      { name: 'Data Analytics', href: '/en/services/data-analytics' },
+      { name: 'QA Testing', href: '/en/services/qa-testing' },
     ],
     company: [
       { name: 'About Us', href: '/en/about-us' },
@@ -32,59 +39,78 @@ export function Footer() {
       <Container>
         {/* Desktop Footer */}
         <div className="py-16 hidden md:block">
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {/* Company Info */}
-            <div className="lg:col-span-1 text-center lg:text-left">
-              <div className="flex items-center justify-center lg:justify-start space-x-2 mb-4">
-                <Image
-                  src="/csi logo.png"
-                  alt="CSI Logo"
-                  width={32}
-                  height={32}
-                  className="h-8 w-8"
-                />
-                <span className="text-xl font-bold">PT CSI</span>
+          <div className="max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+              {/* Company Info */}
+              <div className="text-center">
+                <div className="flex items-center justify-center space-x-2 mb-4">
+                  <Image
+                    src="/csi logo.png"
+                    alt="CSI Logo"
+                    width={32}
+                    height={32}
+                    className="h-8 w-8"
+                  />
+                  <span className="text-xl font-bold">PT CSI</span>
+                </div>
+                <p className="text-gray-400 mb-4">
+                  Transforming ideas into inspiring experiences through innovative digital solutions.
+                </p>
+                <p className="text-sm text-gray-400">
+                  Email: info@ptcreativesolution.com
+                </p>
               </div>
-              <p className="text-gray-400 mb-4">
-                Transforming ideas into inspiring experiences through innovative digital solutions.
-              </p>
-              <p className="text-sm text-gray-400">
-                Email: info@ptcreativesolution.com
-              </p>
-            </div>
 
-            {/* Traditional Services */}
-            <div className="text-center lg:text-left">
-              <h3 className="text-lg font-semibold mb-4">Services</h3>
-              <ul className="space-y-2">
-                {footerLinks.services.map((link) => (
-                  <li key={link.name}>
-                    <Link
-                      href={link.href}
-                      className="text-gray-400 hover:text-white transition-colors"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+              {/* Web3 Services */}
+              <div className="text-center">
+                <h3 className="text-lg font-semibold mb-4">Web3 Services</h3>
+                <ul className="space-y-2">
+                  {footerLinks.web3.map((link) => (
+                    <li key={link.name}>
+                      <Link
+                        href={link.href}
+                        className="text-gray-400 hover:text-white transition-colors"
+                      >
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-            {/* Company & Legal */}
-            <div className="text-center lg:text-left">
-              <h3 className="text-lg font-semibold mb-4">Company</h3>
-              <ul className="space-y-2">
-                {footerLinks.company.map((link) => (
-                  <li key={link.name}>
-                    <Link
-                      href={link.href}
-                      className="text-gray-400 hover:text-white transition-colors"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              {/* Traditional Services */}
+              <div className="text-center">
+                <h3 className="text-lg font-semibold mb-4">IT Services</h3>
+                <ul className="space-y-2">
+                  {footerLinks.services.map((link) => (
+                    <li key={link.name}>
+                      <Link
+                        href={link.href}
+                        className="text-gray-400 hover:text-white transition-colors"
+                      >
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Company */}
+              <div className="text-center">
+                <h3 className="text-lg font-semibold mb-4">Company</h3>
+                <ul className="space-y-2">
+                  {footerLinks.company.map((link) => (
+                    <li key={link.name}>
+                      <Link
+                        href={link.href}
+                        className="text-gray-400 hover:text-white transition-colors"
+                      >
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -107,13 +133,42 @@ export function Footer() {
 
           {/* Collapsible Sections */}
           <div className="space-y-2">
-            {/* Services Accordion */}
+            {/* Web3 Services Accordion */}
+            <div className="border-b border-gray-800">
+              <button
+                onClick={() => toggleSection('web3')}
+                className="flex justify-between items-center w-full py-3 text-left"
+              >
+                <h3 className="font-semibold">Web3 Services</h3>
+                <ChevronDown
+                  className={`h-4 w-4 transition-transform ${
+                    openSection === 'web3' ? 'rotate-180' : ''
+                  }`}
+                />
+              </button>
+              {openSection === 'web3' && (
+                <ul className="pb-3 space-y-2">
+                  {footerLinks.web3.map((link) => (
+                    <li key={link.name}>
+                      <Link
+                        href={link.href}
+                        className="text-gray-400 hover:text-white transition-colors text-sm"
+                      >
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+
+            {/* IT Services Accordion */}
             <div className="border-b border-gray-800">
               <button
                 onClick={() => toggleSection('services')}
                 className="flex justify-between items-center w-full py-3 text-left"
               >
-                <h3 className="font-semibold">Services</h3>
+                <h3 className="font-semibold">IT Services</h3>
                 <ChevronDown
                   className={`h-4 w-4 transition-transform ${
                     openSection === 'services' ? 'rotate-180' : ''
