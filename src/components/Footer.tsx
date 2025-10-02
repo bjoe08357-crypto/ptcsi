@@ -120,7 +120,13 @@ export function Footer() {
           {/* Company Info - Always Visible */}
           <div className="mb-6">
             <div className="flex items-center space-x-2 mb-3">
-              <div className="h-6 w-6 rounded bg-blue-600"></div>
+              <Image
+                src="/csi logo.png"
+                alt="CSI Logo"
+                width={24}
+                height={24}
+                className="h-6 w-6"
+              />
               <span className="text-lg font-bold">PT CSI</span>
             </div>
             <p className="text-gray-400 text-sm mb-2">
