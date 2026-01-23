@@ -238,7 +238,7 @@ export function Footer() {
         <div className="border-t border-gray-800 py-8">
           <div className="text-center">
             <p className="text-gray-400 text-sm">
-              © 2025 PT Creative Solution International. All rights reserved.
+              © 2026 PT Creative Solution International. All rights reserved.
             </p>
           </div>
         </div>
