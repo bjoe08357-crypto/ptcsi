@@ -172,7 +172,7 @@ export default function ContactPage() {
                   Email Us Now
                 </a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-2 border-white/30 text-white hover:bg-white/10 font-semibold">
+              <Button asChild size="lg" className="bg-white/15 border-2 border-white/40 text-white hover:bg-white/25 font-semibold backdrop-blur-sm">
                 <Link href="/en/services">
                   Explore Our Services
                   <ArrowRight className="ml-2 h-4 w-4" />
