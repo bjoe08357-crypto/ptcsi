@@ -1,7 +1,6 @@
 import { Container } from '@/components/Container'
 import { Section } from '@/components/Section'
 import { PageHeader } from '@/components/PageHeader'
-import { ContactForm } from '@/components/ContactForm'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Mail, Phone, MapPin, Clock } from 'lucide-react'
 
@@ -40,17 +39,10 @@ export default function ContactPage() {
         subtitle="Siap memulai proyek Anda? Hubungi tim kami dan mari diskusikan bagaimana kami dapat membantu Anda mencapai tujuan Anda."
       />
 
-      {/* Contact Form & Info */}
+      {/* Contact Information */}
       <Section className="py-20 bg-white">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            {/* Contact Form */}
-            <div>
-              <ContactForm />
-            </div>
-
-            {/* Contact Information */}
-            <div className="space-y-8">
+          <div className="max-w-2xl mx-auto space-y-8">
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">
                   Hubungi Kami
@@ -99,10 +91,14 @@ export default function ContactPage() {
                   </ul>
                 </CardContent>
               </Card>
-            </div>
           </div>
         </Container>
       </Section>
     </>
   )
 }
+
+
+
+
+
