@@ -7,7 +7,6 @@ import { usePathname } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Menu, X } from 'lucide-react'
-import { ThemeToggle } from './ThemeToggle'
 import { LanguageToggle } from './LanguageToggle'
 
 export function Header() {
@@ -65,7 +64,6 @@ export function Header() {
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-2">
-            <ThemeToggle />
             <LanguageToggle />
             <Button asChild className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
               <Link href={`${langPrefix}/contact`}>
@@ -98,7 +96,6 @@ export function Header() {
                   <div className="pt-4 border-t border-blue-100 dark:border-blue-900">
                     <div className="flex flex-col space-y-4">
                       <div className="flex space-x-2">
-                        <ThemeToggle />
                         <LanguageToggle />
                       </div>
                       <Button asChild className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 shadow-lg">
