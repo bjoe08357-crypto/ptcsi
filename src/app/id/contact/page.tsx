@@ -26,7 +26,7 @@ export default function ContactPage() {
     },
     {
       icon: MapPin,
-      title: 'Kunjungi Kami',
+      title: 'Berlokasi Di',
       description: 'Jakarta, Indonesia',
       href: '#',
       color: 'from-purple-500 to-purple-600',
